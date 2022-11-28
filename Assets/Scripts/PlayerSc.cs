@@ -22,8 +22,6 @@ public class PlayerSc : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         onGround = false;
         gameSc = game.GetComponent<GameSc>(); 
-        
-        //Debug.Log("Arena position in PlayerSc: " + arenaPosition.transform.position);
     }
 
     void OnCollisionEnter(Collision other){
@@ -49,12 +47,8 @@ public class PlayerSc : MonoBehaviour
             isParkourFinishedP1 = true;
             Debug.Log("isParkourFinishedP1 set edildi : " + isParkourFinishedP1);
             Debug.Log("playerSc.isParkourFinishedP1 Calisti");
-            //this.gameObject.transform.position = arenaSc.transform.position;
+            this.gameObject.transform.position = new Vector3(150.05f,236.59f,0);
             Debug.Log("Player position: " + this.gameObject.transform.position);
-            
-            
-            
-            
         }
         if(other.tag == "P2LastLoop") {
             isParkourFinishedP2 = true;
