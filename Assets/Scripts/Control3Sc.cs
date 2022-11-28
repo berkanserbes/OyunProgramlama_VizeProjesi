@@ -81,6 +81,7 @@ public class Control3Sc : MonoBehaviour, IControl
     }
 
     void P2CharacterControl(){
+        /*
         Vector3 velocity = rb.velocity;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
          if(Mathf.Abs(localVelocity.x) <= _maxSpeed && Input.GetAxis("P2Horizontal") != 0)
@@ -91,6 +92,24 @@ public class Control3Sc : MonoBehaviour, IControl
         if(Mathf.Abs(localVelocity.z) <= _maxSpeed && Input.GetAxis("P2Vertical") != 0)
         {
             vertical_speed = Input.GetAxis("P2Vertical") * _speed;
+            rb.AddForce(transform.forward * vertical_speed);
+        }
+        
+        if(Input.GetAxisRaw("P2Jump") != 0 && playerSc.onGround){
+            Debug.Log("Jump calisti.");
+            rb.AddForce(Vector3.up * _jump);
+        }
+        */
+        Vector3 velocity = rb.velocity;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        if(Input.GetAxis("P2Horizontal") != 0)
+        {
+            horizontal_speed = Input.GetAxisRaw("P2Horizontal") * 50;
+            transform.Rotate(0f, horizontal_speed * Time.deltaTime * 2, 0f, Space.Self);
+        }
+        if(Mathf.Abs(localVelocity.z) <= _maxSpeed && Input.GetAxis("P2Vertical") != 0)
+        {
+            vertical_speed = Input.GetAxisRaw("P2Vertical") * _speed;
             rb.AddForce(transform.forward * vertical_speed);
         }
         
