@@ -18,7 +18,7 @@ Parkurda bulunan iki oyuncunun kendi parkurunun bitiş noktasına rakibinden ön
 | **Tuş**      | **Tuş**     | **Görev** |
 | W            |    ↑        | İleri hareket etme         |
 | A            |    ←        | Sola hareket etme          |
-| S            |    ↓        | Aşağı hareket etme         |
+| S            |    ↓        | Geriye hareket etme        |
 | D            |    →        | Sağa hareket etme          |
 | Space        |    0        | Zıplama                    |
 | CTRL         |    +        | Ateş etme                  |
