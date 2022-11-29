@@ -14,14 +14,16 @@ public class PlayerSc : MonoBehaviour
     public GameObject location;
 
     public IControl control;
-
-    public bool isParkourFinishedP1 = false;
-    public bool isParkourFinishedP2 = false;
+    public GameObject player1Win;
+    public GameObject player2Win;
     
     void Start(){
         rb = GetComponent<Rigidbody>();
         onGround = false;
         gameSc = game.GetComponent<GameSc>(); 
+        player1Win.SetActive(false);
+        player2Win.SetActive(false);
+        
     }
 
     void OnCollisionEnter(Collision other){
@@ -42,17 +44,15 @@ public class PlayerSc : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other) {
+     void OnTriggerEnter(Collider other) {
         if(other.tag == "P1LastLoop") {
-            isParkourFinishedP1 = true;
-            Debug.Log("isParkourFinishedP1 set edildi : " + isParkourFinishedP1);
-            Debug.Log("playerSc.isParkourFinishedP1 Calisti");
-            this.gameObject.transform.position = new Vector3(150.05f,236.59f,0);
-            Debug.Log("Player position: " + this.gameObject.transform.position);
+            player1Win.SetActive(true);
+            Time.timeScale = 0f;
         }
-        if(other.tag == "P2LastLoop") {
-            isParkourFinishedP2 = true;
-            Debug.Log("isParkourFinishedP2 set edildi : " + isParkourFinishedP2);
-        }
+        
+        else if(other.tag == "P2LastLoop") {
+            player2Win.SetActive(true);  
+            Time.timeScale = 0f;
+        } 
     }
 }
