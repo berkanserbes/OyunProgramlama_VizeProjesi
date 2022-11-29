@@ -1,7 +1,7 @@
 <h3 align="center">22360859353 Berkan Serbes</h3>
 
 <hr>
-<p align="center">Oyunu tarayıcınızda oynamak için <a href="https://simmer.io/@berkanserbes/parkour-race"> tıklayın</a></p>
+<p align="center">Oyunu tarayıcınızda oynamak için <a href="https://simmer.io/@berkanserbes/parkour-race" target="_blank"> tıklayın</a></p>
 <hr>
 
 # 3D 2 Kişilik Parkur Yarışı Oyunu 
