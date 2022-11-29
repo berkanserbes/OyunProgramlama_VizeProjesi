@@ -1,9 +1,12 @@
-# 3D 2 Kişilik Parkur Tamamlama Oyunu
+<h3 style="color: #2146C7; text-align: center">22360859353 Berkan Serbes</h3>
+<hr>
+
+# 3D 2 Kişilik Parkur Tamamlama Oyunu 
 
 ## Oyunun Adı: Parkour Race 
 
 ## Oyunun Amacı
-Parkurda bulunan iki oyuncu kendi parkurunun bitiş noktasına rakibinden önce ulaşarak galip gelmek.
+Parkurda bulunan iki oyuncunun kendi parkurunun bitiş noktasına rakibinden önce ulaşarak galip gelmek.
 
 ## Oyun Tuşları
 
@@ -36,6 +39,19 @@ Bu kısımda oyuncular karşıdan gelen kutulardan kaçıp güvenli bölgelere i
 ![Box Collision](https://github.com/berkanserbes/OyunProgramlama_VizeProjesi/blob/main/ScreenShot/BoxCollision.png?raw=true)
 
 
+Parkurun bitiş çizgisine ilk ulaşan oyuncu oyunu kazanır. Oyunun sonunda oyunu kazanan kişiyi gösteren ekran ortaya çıkar.
+
+![Winner Screen](https://github.com/berkanserbes/OyunProgramlama_VizeProjesi/blob/main/ScreenShot/WinnerScreen.png?raw=true)
+
+
 Herhangi bir oyuncu ESC tuşuna bastığında oyun duraklatılır ve durdurma menüsü açılır. Bu durdurma menüsünde 'Devam Et' ve 'Yeniden Başlat' adlı iki adet buton bulunmaktadır. Oyuncu 'Devam Et' butonuna basarak oyuna kaldığı yerden devam edebilir veya 'Yeniden Başlat' butonuna basarak oyuna yeniden başlayabilir ya da yeniden ESC tuşuna basarak bu durdurma menüsünü kapatabilir.
 
 ![Pause Menu](https://github.com/berkanserbes/OyunProgramlama_VizeProjesi/blob/main/ScreenShot/PauseMenu.png?raw=true)
+
+<hr>
+
+## Oyunu Geliştirenler ve Görevleri
+
+Parkurun oluşturulmasını, oyuncuların mekaniğini (hareket, zıplama, ateş etme), parkurdaki cisimlerin mekaniklerini ve bunlarla ilgili scriptleri takım arkadaşım Samet Özkan geliştirdi.
+
+Ben ise durdurma menüsününün gösterimi,kodlanması ve oyunu kimin kazandığını gösteren ekranı geliştirdim.
