@@ -31,7 +31,7 @@ Oyun ekranı, sol tarafta Player1'in kamerası ve sağ tarafta Player2'nin kamer
 
 ### Atış bölümü
 
-Bu kısımda oyuncular duvardaki hedefleri yok ederek oyuna devam ederler. Hedefler yeşil ve kırmızı olmak üzere iki renkten oluşur ve belirli aralıklarla renkleri değişir. Eğer hedefin rengi kırmızıysa Oyuncu1 Space tuşuyla, Oyuncu2 + tuşuyla hedefleri yok edebilir.
+Bu kısımda oyuncular duvardaki hedefleri yok ederek oyuna devam ederler. Hedefler yeşil ve kırmızı olmak üzere iki renkten oluşur ve belirli aralıklarla renkleri değişir. Eğer hedefin rengi kırmızıysa Oyuncu1 CTRL tuşuyla, Oyuncu2 + tuşuyla hedefleri yok edebilir.
 
 ![Target Area](https://github.com/berkanserbes/OyunProgramlama_VizeProjesi/blob/main/ScreenShot/ShootTarget.png?raw=true)
 
